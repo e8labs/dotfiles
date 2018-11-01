@@ -22,7 +22,7 @@
   (end-of-line)
   (insert ";"))
 
-(defun michaelsanders-better-defaults/ycmd-init-server (server-command)
+(defun ericbaranowski-better-defaults/ycmd-init-server (server-command)
   "Toggle ycmd mode and set `ycmd-server-command' to the given
 command, restarting the server if necessary."
   (require 'ycmd)
@@ -33,14 +33,14 @@ command, restarting the server if necessary."
     (when (ycmd-running-p) (ycmd-close)))
   (ycmd-mode))
 
-(defun michaelsanders-better-defaults/ycmd-init ()
+(defun ericbaranowski-better-defaults/ycmd-init ()
   "Toggle ycmd mode and configure server."
-  (michaelsanders-better-defaults/ycmd-init-server
+  (ericbaranowski-better-defaults/ycmd-init-server
    `(,(file-truename "~/.pyenv/shims/python") ,(file-truename "~/.ycmd/ycmd"))))
 
-(defun michaelsanders-better-defaults/icmd-init ()
+(defun ericbaranowski-better-defaults/icmd-init ()
   "Toggle ycmd mode and configure server for icmd."
-  (michaelsanders-better-defaults/ycmd-init-server
+  (ericbaranowski-better-defaults/ycmd-init-server
    `(,(file-truename "~/.pyenv/shims/python") ,(file-truename "~/.icmd/ycmd"))))
 
 ;; Hack from https://github.com/syl20bnr/spacemacs/issues/2751#issuecomment-290739613
@@ -61,7 +61,7 @@ command, restarting the server if necessary."
          (message "Walk directory %S failed." path)
          nil)))))
 
-(defun michaelsanders-better-defaults/objective-c-file-p ()
+(defun ericbaranowski-better-defaults/objective-c-file-p ()
   (and buffer-file-name
 	     (file-name-extension buffer-file-name)
        (member (file-name-extension buffer-file-name) '("m" "h"))

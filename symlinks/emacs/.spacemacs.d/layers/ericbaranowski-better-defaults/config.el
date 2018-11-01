@@ -36,16 +36,16 @@
                ))
 
 ;; YouCompleteMe hooks.
-(add-hook 'c++-mode-hook #'michaelsanders-better-defaults/ycmd-init)
-(add-hook 'c-mode-hook #'michaelsanders-better-defaults/ycmd-init)
-(add-hook 'js2-mode-hook #'michaelsanders-better-defaults/ycmd-init)
-(add-hook 'python-mode-hook #'michaelsanders-better-defaults/ycmd-init)
-(add-hook 'swift-mode-hook #'michaelsanders-better-defaults/icmd-init)
+(add-hook 'c++-mode-hook #'ericbaranowski-better-defaults/ycmd-init)
+(add-hook 'c-mode-hook #'ericbaranowski-better-defaults/ycmd-init)
+(add-hook 'js2-mode-hook #'ericbaranowski-better-defaults/ycmd-init)
+(add-hook 'python-mode-hook #'ericbaranowski-better-defaults/ycmd-init)
+(add-hook 'swift-mode-hook #'ericbaranowski-better-defaults/icmd-init)
 (add-hook 'company-mode-hook #'company-ycmd-setup)
 
 ;; Workaround from
 ;; https://github.com/syl20bnr/spacemacs/issues/5634#issuecomment-204340185
 ;; to auto-detect objc files.
 (add-to-list 'magic-mode-alist
-             (cons #'michaelsanders-better-defaults/objective-c-file-p
+             (cons #'ericbaranowski-better-defaults/objective-c-file-p
                    #'objc-mode))

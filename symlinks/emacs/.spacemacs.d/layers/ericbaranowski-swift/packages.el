@@ -4,7 +4,7 @@
 ;;
 ;;; License: GPLv3
 
-(defconst michaelsanders-swift-packages
+(defconst ericbaranowski-swift-packages
   '(
     company
     flycheck-swiftlint
@@ -13,22 +13,22 @@
     swift-playground-mode
    ))
 
-(defun michaelsanders-swift/init-flycheck-swiftlint ()
+(defun ericbaranowski-swift/init-flycheck-swiftlint ()
   (use-package flycheck-swiftlint :ensure t :defer t))
 
-(defun michaelsanders-swift/init-swift-playground-mode ()
+(defun ericbaranowski-swift/init-swift-playground-mode ()
   (use-package swift-playground-mode :defer t :init
     (autoload 'swift-playground-toggle-if-needed "swift-playground-mode" nil t)
     (add-hook 'swift-mode-hook #'swift-playground-toggle-if-needed)))
 
-(defun michaelsanders-swift/post-flycheck-swiftlint ()
+(defun ericbaranowski-swift/post-flycheck-swiftlint ()
   (with-eval-after-load 'flycheck (flycheck-swiftlint-setup)))
 
-(defun michaelsanders-swift/post-init-company ()
+(defun ericbaranowski-swift/post-init-company ()
   (spacemacs|add-company-hook swift-mode))
 
-(defun michaelsanders-swift/post-init-ggtags ()
+(defun ericbaranowski-swift/post-init-ggtags ()
   (add-hook 'swift-mode-local-vars-hook #'spacemacs/ggtags-mode-enable))
 
-(defun michaelsanders-swift/post-init-helm-gtags ()
+(defun ericbaranowski-swift/post-init-helm-gtags ()
   (spacemacs/helm-gtags-define-keys-for-mode #'swift-mode))

@@ -9,7 +9,7 @@
 	<key>RunAtLoad</key>
 	<true/>
 	<key>Label</key>
-	<string>com.msanders.Launchterm</string>
+	<string>com.doteric.Launchterm</string>
 	<key>Program</key>
 	<string>/Users/{USER}/Library/Application Support/Launchterm/Launchterm</string>
 </dict>

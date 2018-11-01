@@ -14,7 +14,7 @@ zstyle ':completion:*' expand prefix suffix
 zstyle ':completion:*' file-sort name
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 zstyle ':completion:*' squeeze-slashes true
-zstyle :compinstall filename '/home/michael/.zshrc'
+zstyle :compinstall filename '/home/eric/.zshrc'
 
 setopt AUTOCD # Automatically cd if command is directory name.
 setopt NOMATCH # If glob shows no matches, tell me.
@@ -95,14 +95,14 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 
 # added by travis gem
-[ -f /Users/msanders/.travis/travis.sh ] && source /Users/msanders/.travis/travis.sh
+[ -f /Users/doteric/.travis/travis.sh ] && source /Users/doteric/.travis/travis.sh
 
 # Rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # added by travis gem
-[ -f /Users/mks/.travis/travis.sh ] && source /Users/mks/.travis/travis.sh
+[ -f /Users/x/.travis/travis.sh ] && source /Users/x/.travis/travis.sh
 
 # added by travis gem
-[ -f /Users/yam/.travis/travis.sh ] && source /Users/yam/.travis/travis.sh
+[ -f /Users/abc/.travis/travis.sh ] && source /Users/abc/.travis/travis.sh

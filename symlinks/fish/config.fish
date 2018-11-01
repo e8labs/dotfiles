@@ -1,6 +1,6 @@
 set --export DEVELOPER_DIR "/Applications/Xcode.app/Contents/Developer"
 set --export EDITOR "emacsclient --alternate-editor=vim"
-set --export GITHUB_USERNAME msanders
+set --export GITHUB_USERNAME e8labs
 set --export GREP_OPTIONS "--color=auto"
 set --export LANG C
 set --export LC_ALL en_US.UTF-8

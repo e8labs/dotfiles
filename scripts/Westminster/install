@@ -3,7 +3,7 @@ set -o errexit -o pipefail -o nounset
 
 DIRNAME=$(dirname "$0")
 TARGET="Westminster"
-DOMAIN="com.msanders.westminster"
+DOMAIN="com.doteric.westminster"
 AGENT_DIR="$HOME/Library/LaunchAgents"
 PLIST="$AGENT_DIR/$DOMAIN.plist"
 SUPPORT_DIR="$HOME/Library/Application Support/$TARGET"

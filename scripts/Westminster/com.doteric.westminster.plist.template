@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.msanders.westminster</string>
+	<string>com.doteric.westminster</string>
 	<key>Program</key>
 	<string>/Users/{USER}/Library/Application Support/Westminster/westminster</string>
 	<key>StartCalendarInterval</key>

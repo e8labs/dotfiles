@@ -49,7 +49,7 @@ values."
      java
      javascript
      markdown
-     michaelsanders
+     ericbaranowski
      osx
      ruby-on-rails
      scheme
